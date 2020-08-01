@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent">
-
+    android:id="@+id/lenure"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,77 +18,58 @@
             android:id="@+id/textView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_margin="20dp"
             android:gravity="center_horizontal"
-            android:paddingTop="6dp"
-            android:text="@string/contact_us_header"
+            android:text="@string/headerlogin"
             android:textColor="@color/colorfont"
             android:textSize="30sp"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/EntEmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:layout_marginTop="15dp"
-        android:ems="10"
-        android:hint="@string/enter_email_contectus"
-        android:inputType="textEmailAddress"
-        android:paddingTop="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:autofillHints="" />
-
-    <EditText
-        android:id="@+id/Entname"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:ems="10"
-        android:hint="@string/enter_name_contactus"
-        android:inputType="textEmailAddress"
-        android:paddingTop="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EntEmail"
-        android:autofillHints="" />
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/countactususer"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <EditText
-            android:id="@+id/entmsg"
+            android:id="@+id/password"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:ems="10"
-            android:gravity="start|top"
-            android:hint="@string/any_query_contactus"
-            android:inputType="textMultiLine"
-            android:paddingBottom="80dp"
+            android:hint="@string/password"
+            android:inputType="numberPassword"
+            app:layout_constraintBottom_toTopOf="@+id/go"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Entname"
+            app:layout_constraintTop_toBottomOf="@+id/username"
             android:autofillHints="" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/go"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_margin="40dp"
-            android:layout_marginEnd="15dp"
+            android:layout_marginTop="21dp"
             android:background="@drawable/roundened_corner"
             android:gravity="center_horizontal|center_vertical"
-            android:text="@string/send_contactus"
+            android:text="@string/contactusgo"
             android:textColor="#FFF"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.615"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/entmsg" />
+            app:layout_constraintTop_toBottomOf="@+id/password" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

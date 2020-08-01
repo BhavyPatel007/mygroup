@@ -11,5 +11,9 @@
     <string name="enter_name_contactus">Enter Name</string>
     <string name="any_query_contactus">Any Query</string>
     <string name="send_contactus">Send</string>
+    <string name="password_login">password</string>
+    <string name="password2">password</string>
+    <string name="password">password</string>
+    <string name="about_us">About us</string>
 
 </resources>
