@@ -1,75 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/lenure"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
+
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        tools:context=".MainActivity">
+        android:layout_height="match_parent"
+        tools:context=".splech_screen">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:gravity="center_horizontal"
-            android:text="@string/headerlogin"
-            android:textColor="@color/colorfont"
-            android:textSize="30sp"
+        <ImageView
+            android:id="@+id/imglogo"
+            android:layout_width="183dp"
+            android:layout_height="202dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/username"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:layout_marginTop="16dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="@string/countactususer"
-            android:inputType="textEmailAddress"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:ems="10"
-            android:hint="@string/password"
-            android:inputType="numberPassword"
-            app:layout_constraintBottom_toTopOf="@+id/go"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/username"
-            android:autofillHints="" />
-
-        <Button
-            android:id="@+id/go"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_margin="40dp"
-            android:layout_marginTop="21dp"
-            android:background="@drawable/roundened_corner"
-            android:gravity="center_horizontal|center_vertical"
-            android:text="@string/contactusgo"
-            android:textColor="#FFF"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/password" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lg"
+            android:contentDescription="@string/todo" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+</RelativeLayout>

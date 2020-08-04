@@ -7,19 +7,28 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class contactus extends AppCompatActivity {
-    Button button;
+    private Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contactus);
-        Button eLogin = findViewById(R.id.about);
-        eLogin.setOnClickListener(new View.OnClickListener() {
+
+        button = (Button) findViewById(R.id.about);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(contactus.this, Aboutus.class));
+                            Aboutus();
             }
 
         });
     }
 
+    public void Aboutus()
+
+    {
+        Intent intent = new Intent(this, Aboutus.class);
+        startActivity(intent);
+
+    }
 }

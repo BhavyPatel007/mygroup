@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:background="#FFFFFF">
 
 
   <androidx.constraintlayout.widget.ConstraintLayout
@@ -14,7 +14,7 @@
       tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtabout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -41,7 +41,7 @@
         android:paddingTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/txtabout" />
 
     <EditText
         android:id="@+id/Entname"
@@ -95,7 +95,7 @@
         android:layout_marginEnd="40dp"
         android:background="@drawable/roundened_corner"
         android:gravity="center_horizontal|center_vertical"
-        android:text="@string/about_us"
+        android:text="@string/aboutu"
         android:textColor="#FFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
