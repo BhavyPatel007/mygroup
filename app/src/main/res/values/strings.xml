@@ -15,5 +15,20 @@
     <string name="password2">password</string>
     <string name="password">password</string>
     <string name="about_us">About us</string>
+    <string name="about">About Us</string>
+    <string name="tdo">TODO</string>
+    <string name="bhavy">Bhavy Soliya</string>
+    <string name="en">18SOECE11057</string>
+    <string name="c">7874406430</string>
+    <string name="enroll">18SOECE11043</string>
+    <string name="cont">6355477607</string>
+    <string name="name">Dharmesh Daki</string>
+    <string name="enrollment">18SOECE11057</string>
+    <string name="td">TODO</string>
+    <string name="kru">Krushali Patoliya</string>
+    <string name="contact">8980354712</string>
+    <string name="tod">TODO</string>
+    <string name="contact_us">CONTACT US</string>
+    <string name="aboutu">ABOUT</string>
 
 </resources>
